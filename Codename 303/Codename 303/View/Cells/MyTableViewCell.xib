@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="Codename_303" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT9-df-9DD" userLabel="First Name">
+                        <rect key="frame" x="10" y="10" width="83" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="qdD-kY-Q5x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-Kl-2bE" userLabel="Last Name">
+                        <rect key="frame" x="103" y="10" width="85" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Dsj-gA-N4p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3X-tl-0JB">
+                        <rect key="frame" x="10" y="38" width="35" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bR6-N9-JMq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-NH-Km9" userLabel="City">
+                        <rect key="frame" x="55" y="38" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XgO-fA-8p6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q3X-tl-0JB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0vx-27-Alt"/>
+                    <constraint firstItem="WOV-Kl-2bE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="15v-HM-nsC"/>
+                    <constraint firstItem="WOV-Kl-2bE" firstAttribute="leading" secondItem="LT9-df-9DD" secondAttribute="trailing" constant="10" id="73f-27-zYo"/>
+                    <constraint firstItem="q3X-tl-0JB" firstAttribute="centerY" secondItem="5Ah-NH-Km9" secondAttribute="centerY" id="8On-ag-sI7"/>
+                    <constraint firstItem="q3X-tl-0JB" firstAttribute="top" secondItem="LT9-df-9DD" secondAttribute="bottom" constant="8" id="9AI-TZ-Vqf"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Ah-NH-Km9" secondAttribute="trailing" id="GqV-Wm-gKM"/>
+                    <constraint firstItem="5Ah-NH-Km9" firstAttribute="top" secondItem="WOV-Kl-2bE" secondAttribute="bottom" constant="8" id="OWj-Hm-VN5"/>
+                    <constraint firstItem="5Ah-NH-Km9" firstAttribute="leading" secondItem="q3X-tl-0JB" secondAttribute="trailing" constant="10" id="ZZn-Lj-MlD"/>
+                    <constraint firstItem="LT9-df-9DD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ea9-Ea-I2F"/>
+                    <constraint firstItem="LT9-df-9DD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="h9N-zK-GLz"/>
+                    <constraint firstAttribute="bottom" secondItem="q3X-tl-0JB" secondAttribute="bottom" constant="8" id="ton-Iq-zgM"/>
+                    <constraint firstItem="LT9-df-9DD" firstAttribute="centerY" secondItem="WOV-Kl-2bE" secondAttribute="centerY" id="uge-la-8vm"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WOV-Kl-2bE" secondAttribute="trailing" id="wpi-eJ-Qv1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityLabel" destination="5Ah-NH-Km9" id="R7l-iP-HYK"/>
+                <outlet property="firstNameLabel" destination="LT9-df-9DD" id="XGi-Hs-rIg"/>
+                <outlet property="lastNameLabel" destination="WOV-Kl-2bE" id="d7p-ev-zUe"/>
+            </connections>
+            <point key="canvasLocation" x="86.231884057971016" y="45.200892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
